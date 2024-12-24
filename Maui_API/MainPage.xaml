@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui_API.MainPage">
+
+    <ScrollView>
+
+        <StackLayout Margin="10">
+            <Border BackgroundColor="#2196F3" Padding="24" >
+                <Label Text="API REST" HorizontalTextAlignment="Center" TextColor="White" FontSize="24"/>
+            </Border>
+
+            <Button Text="Buscar Estados" 
+                    Clicked="btnBuscarCeps"
+                    Margin="20,10"
+                    />
+
+            <Button Text="Busca Brands"
+                    Clicked="btnBuscaBrands_Click"
+                    Margin="20,10"
+                    />
+
+            <ListView x:Name="lvUsers2" Margin="20,20">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout BackgroundColor="White">
+                                <Label Text="{Binding nome}" TextColor="Black" FontSize="22"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+            
+            <ListView x:Name="lvBrands" Margin="20,20">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout BackgroundColor="White">
+                                <Label Text="{Binding title}" TextColor="Black" FontSize="18"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+
+
+        </StackLayout>
+
+
+    </ScrollView>
+
+</ContentPage>
