@@ -21,5 +21,7 @@ na Pasta Models do Projeto, temos as classes que representam os Estados (ufs) e 
 é necessário instalar a seguinte biblioteca via NUGET
   newtonsoft.json
 
+Espero ter ajudado
 
+Alessandro Fukuta
 
